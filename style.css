@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding :20px
 }
 
 h1 {
@@ -21,8 +22,9 @@ form {
     border: 1px solid #ffcc80;
     border-radius: 8px;
     padding: 20px;
-    width: px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 label {
