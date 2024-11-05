@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <form action="/submit_form" method="post">
+        <h1> 
+            Library Membership Registration Form
+        </h1>
+        <label for="fullname">Full Name (in English): <span style="color: red;">*</span></label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="gender">Gender:<span style="color: red;">*</span></label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="studentID">Student ID:<span style="color: red;">*</span></label><br>
+        <input type="text" id="studentID" name="studentID" required><br><br>
+
+        <label for="faculty">Faculty:<span style="color: red;">*</span></label><br>
+        <input type="text" id="faculty" name="faculty" required><br><br>
+
+        <label for="email">Email Address:<span style="color: red;">*</span></label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:<span style="color: red;">*</span></label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="booktype">Type of Books Interested In:<span style="color: red;">*</span></label><br>
+        <select id="booktype" name="booktype" required>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="comic">Comics</option>
+            <option value="academic">Academic</option>
+            <option value="business">Business</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="newsletter">Would you like to receive library updates via email?</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" >
+        <label for="newsletter">Yes</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
